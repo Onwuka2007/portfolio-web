@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="resume.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>My Resume</title>
+  </head>
+  <body>
+    <!--mobile view-->
+    <div class="overlay" id="overlay"></div>
+
+    <div id="navHeader" class="desktop-header">
+      <div class="name">Onwuka Emmanuel</div>
+      <div class="hamburger" id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <div id="sidebar">
+      <div id="mobileHeader" class="mobile-header">
+        <div class="name">Onwuka Emmanuel</div>
+        <div class="close-btn" id="closeBtn">&times;</div>
+      </div>
+
+      <div class="sidebar-links">
+        <a href="#">About</a>
+
+        <a href="#">Experience</a>
+
+        <a href="#">Skills</a>
+
+        <a href="#">Project</a>
+
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a class="name">Onwuka Emmanuel</a>
+          </li>
+
+          <li class="nav-right">
+            <a href="#about">About</a>
+          </li>
+
+          <li>
+            <a href="#experience">Experience</a>
+          </li>
+
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main aria-label="Main Section">
+      <section class="introduction">
+        <h1>Hi, I'm Onwuka Emmanuel</h1>
+        <h3>Software Developer & Aspiring Fullstack Developer</h3>
+        <p>
+          I'm currently in my third year studying computer science at Babcock
+          University. Passionate about building amazing user experience with
+          modern tecnonlogies. I specialize in HTML5, CSS3 and JavaScript (ES6)
+          for now.
+        </p>
+
+        <div class="buttons">
+          <a href="#contact">Get In Touch</a>
+          <a href="#projects">View My Work</a>
+          <a href="#download">Download CV</a>
+        </div>
+
+        <!-- Social icons -->
+        <div
+          style="
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            margin: 20px;
+          "
+        >
+          <a
+            href="https://github.com/your-username"
+            target="_blank"
+            style="color: white; font-size: 20px"
+          >
+            <i class="fab fa-github">g</i>
+          </a>
+
+          <a
+            href="https://linkedin.com/in/your-profile"
+            target="_blank"
+            style="color: white; font-size: 20px"
+          >
+            <i class="fab fa-linkedin">l</i>
+          </a>
+
+          <a
+            href="mailto:someone@example.com"
+            style="color: white; font-size: 20px"
+          >
+            <i class="fas fa-envelope">e</i>
+          </a>
+        </div>
+      </section>
+
+      <section class="about-me-sect" id="about">
+        <h2>About Me</h2>
+        <p>
+          Learn more about my background, interests, and what drives me as a
+          developer.
+        </p>
+
+        <div class="personal-bg-x-interest">
+          <div>
+            <h6>Professional Background</h6>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
+              quas repellat incidunt harum fuga rem illo labore minima omnis
+              tenetur accusantium, nisi deserunt quod provident eligendi sequi
+              consequatur quos sapiente ratione necessitatibus sunt tempora
+              corrupti? Ipsam aperiam eveniet nostrum provident quaerat! Omnis
+              itaque sequi labore magnam repellat ex debitis nesciunt?
+            </p>
+          </div>
+
+          <div>
+            <h6>Personal Interests</h6>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
+              quas repellat incidunt harum fuga rem illo labore minima omnis
+              tenetur accusantium, nisi deserunt quod provident eligendi sequi
+              consequatur quos sapiente ratione necessitatibus sunt tempora
+              corrupti? Ipsam aperiam eveniet nostrum provident quaerat! Omnis
+              itaque sequi labore magnam repellat ex debitis nesciunt?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience-sect" id="experience">
+        <h2>Education & Experience</h2>
+        <p>
+          My educational background and [professional journey and the impact
+          I've made at various oragnizations].
+        </p>
+
+        <div class="education-x-experience">
+          <div class="education">
+            <span class="span-for-years">
+              <li><p>Babcock University, Illishan-Remo</p></li>
+              <li class="years nav-right">2023 - ?</li>
+            </span>
+
+            <ul>
+              <li><b>Major:</b> Computer Science</li>
+              <li><b>Focus:</b> Frontend Development</li>
+              <p>EXPECTED GRADUATION: ?</p>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects-sect" id="projects">
+        <h2>Featured Projects</h2>
+        <p>A showcase of my recent work and personal projects</p>
+
+        <div class="project-grid">
+          <div>
+            <h3>E-commerce Platform</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              numquam possimus quas voluptas beatae magnam et recusandae
+              deleniti, quam quibusdam.
+            </p>
+          </div>
+          <div>
+            <h3>E-commerce Platform</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              numquam possimus quas voluptas beatae magnam et recusandae
+              deleniti, quam quibusdam.
+            </p>
+          </div>
+          <div>
+            <h3>E-commerce Platform</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              numquam possimus quas voluptas beatae magnam et recusandae
+              deleniti, quam quibusdam.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-sect" id="contact">
+        <h2>Get In Touch</h2>
+        <p>
+          Have a project in mind? Let's discuss how we can work together to
+          bring your ideas to life.
+        </p>
+
+        <div class="contact-grid">
+          <div>
+            <h4>Contact Information</h4>
+            <p title="Email" style="cursor: pointer">
+              onwukasomtochukwu2022@gmail.com
+            </p>
+            <p title="Phone" style="cursor: pointer">+234 813 1163 888</p>
+            <p title="Location" style="cursor: pointer">Lagos, Nigeria</p>
+          </div>
+          <div>
+            <h4>Send Message</h4>
+          </div>
+        </div>
+      </section>
+
+      <script src="resume.js"></script>
+    </main>
+  </body>
+</html>

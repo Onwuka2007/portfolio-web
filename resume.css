@@ -1,0 +1,504 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 89.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #000;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+h2 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.hamburger {
+  width: 25px;
+  cursor: pointer;
+  margin-right: 5%;
+}
+
+.hamburger div {
+  height: 2px;
+  background: #fff;
+  margin: 6px 0;
+  transition: all 0.7s;
+  width: 40px;
+}
+
+.desktop-header {
+  display: none;
+  justify-content: space-between;
+  color: #fff;
+  border-bottom: 1px solid #49494b;
+  padding: 15px 50px;
+  margin-bottom: 0;
+  position: sticky;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+.mobile-header {
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  position: sticky;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  top: 0;
+  z-index: 1000;
+  padding: 15px 20px;
+  border-bottom: 1px solid #49494b;
+}
+
+header {
+  color: #fff;
+  border-bottom: 1px solid #49494b;
+  padding: 15px 50px;
+  margin-bottom: 0;
+  position: sticky;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 10px;
+}
+nav ul li {
+  font-size: 0.9rem;
+}
+
+nav ul li a {
+  padding: 8px 20px 0px;
+  font-weight: bold;
+  color: #fff;
+}
+
+nav a:hover {
+  color: #ddd9;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-right {
+  margin-left: auto;
+}
+
+.name {
+  font-size: 1.5rem;
+}
+
+.introduction {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.introduction h1 {
+  font-size: 3.5rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.introduction h3 {
+  font-size: 1.2rem;
+  color: #ddd9;
+  margin-bottom: 30px;
+}
+
+.introduction p {
+  width: 100%;
+  max-width: 650px;
+  margin: 10px auto;
+  font-size: 17px;
+  color: #ddd9;
+}
+
+.buttons {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.buttons a {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #29292bad;
+  margin: 10px;
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.buttons a:hover {
+  background-color: #47474963;
+  transition: 0.3s ease-in-out;
+}
+
+.buttons a:nth-of-type(1) {
+  background: #fff;
+  color: #000;
+}
+
+.introduction ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+.introduction ul li img {
+  width: 20px;
+  gap: 10px;
+}
+
+section {
+  padding: 3rem 2rem;
+}
+
+.about-me-sect {
+  display: flex;
+  flex-direction: column;
+  background-color: #27272963;
+  text-align: center;
+}
+.about-me-sect p {
+  width: 100%;
+  max-width: 650px;
+  margin: 10px auto;
+  font-size: 17px;
+  color: #ddd9;
+}
+.personal-bg-x-interest {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.personal-bg-x-interest h6 {
+  color: #fff;
+  font-size: 1rem;
+}
+.personal-bg-x-interest div {
+  width: 100%;
+  border: 1px solid #49494b;
+  border-radius: 10px;
+  max-width: 400px;
+  text-align: left;
+  background: #000100;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.personal-bg-x-interest div:hover {
+  transform: translateY(-10px);
+  transition: 0.5s ease;
+}
+
+.experience-sect {
+  display: flex;
+  flex-direction: column;
+  background-color: #0001;
+  text-align: center;
+  align-items: center;
+}
+.experience-sect p {
+  width: 100%;
+  max-width: 700px;
+  margin: 10px auto;
+  color: #ddd9;
+}
+
+.education,
+.experience {
+  background-color: #000100;
+  border: 1px solid #49494b;
+  border-radius: 10px;
+  width: 800px;
+  text-align: left;
+  justify-content: center;
+  padding: 0 10px 20px 40px;
+  margin-top: 3rem;
+}
+.education p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+.education ul {
+  color: #49494b;
+  font-size: 16px;
+  line-height: 2;
+}
+.education ul p {
+  color: #49494b;
+}
+.years {
+  list-style: none;
+  color: #ddd9;
+  background-color: #27272963;
+  padding: 10px;
+  height: fit-content;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.span-for-years {
+  display: flex;
+}
+
+.skill-sect {
+  flex-direction: column;
+  background-color: #27272963;
+  text-align: center;
+  color: #dddd;
+}
+
+.skills-grid {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.bar {
+  background: #333;
+  height: 10px;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}
+
+.bar div {
+  height: 100%;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.skills-grid-div {
+  width: 100%;
+  border: 1px solid #49494b;
+  border-radius: 10px;
+  max-width: 300px;
+  text-align: left;
+  background: #000100;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.projects-sect {
+  display: flex;
+  flex-direction: column;
+  background-color: #0001;
+  text-align: center;
+  align-items: center;
+}
+.projects-sect p {
+  width: 100%;
+  max-width: 700px;
+  margin: 10px auto;
+  color: #ddd9;
+}
+
+.project-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.project-grid h3 {
+  color: #fff;
+}
+
+.project-grid div {
+  width: 100%;
+  border: 1px solid #49494b;
+  border-radius: 10px;
+  max-width: 350px;
+  text-align: left;
+  background: #000100;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.contact-sect {
+  display: flex;
+  flex-direction: column;
+  background-color: #27272963;
+  text-align: center;
+  color: #fff;
+}
+.contact-sect p {
+  width: 100%;
+  max-width: 700px;
+  margin: 10px auto;
+  color: #ddd9;
+}
+
+.contact-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-grid div {
+  width: 100%;
+  border: 1px solid #49494b;
+  border-radius: 10px;
+  max-width: 450px;
+  text-align: left;
+  background: #000100;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+#sidebar {
+  border-bottom: 1px solid #49494b;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  margin: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: none;
+}
+#sidebar.active {
+  display: block;
+}
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+}
+
+.sidebar-links a {
+  color: #fff;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
+.close-btn {
+  position: absolute;
+  right: 2rem;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  background: #2e2e31;
+  padding: 1px 12px;
+  border-radius: 5px;
+}
+
+@media (max-width: 900px) {
+  header {
+    display: none;
+  }
+  #navHeader {
+    display: flex;
+  }
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 80%;
+  }
+  .personal-bg-x-interest {
+    flex-direction: column;
+    align-items: center;
+  }
+  .name {
+    font-size: 1.1rem;
+  }
+
+  .hamburger div {
+    height: 1px;
+    margin: 4px 0;
+  }
+
+  .introduction,
+  .about-me-sect,
+  .experience-sect,
+  p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+  .personal-bg-x-interest p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  .experience-sect,
+  .about-me-sect,
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .years {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .introduction h1 {
+    font-size: 2.5rem;
+  }
+  .introduction p {
+    font-size: 1.1rem;
+  }
+  .about-me-sect p {
+    font-size: 1.1rem;
+  }
+
+  .buttons button {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-sect div {
+    width: 100%;
+  }
+  #navHeader {
+    padding: 15px 20px;
+  }
+}
